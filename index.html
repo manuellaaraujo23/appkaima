@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KAIMA</title>
+
+<style>
+  body {
+    background-color: #062239; 
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  header {
+    text-align: center;
+    padding: 25px 0;
+    position: relative;
+  }
+
+  header h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: #FFFFFF;
+  }
+
+  .menu-btn {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+
+  .menu-btn span {
+    width: 25px;
+    height: 3px;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+  }
+
+  .container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 20px 25px;
+  }
+
+  section {
+    margin-top: 30px;
+  }
+
+  section h2 {
+    font-size: 1.3rem;
+    border-left: 5px solid #FFFFFF;
+    padding-left: 10px;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+  }
+
+  .atividade {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin-bottom: 18px;
+   
+  }
+
+  .atividade h3 {
+    margin: 0 0 5px 0;
+    font-size: 1rem;
+    color: #FFFFFF;
+  }
+
+  .atividade p {
+    margin: 4px 0;
+    font-size: 0.95rem;
+    color: #E0E6F3;
+  }
+
+  .ver-kaima {
+    display: inline-block;
+    margin-top: 10px;
+    background: #FFFFFF;
+    color: #062239;
+    padding: 7px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 0.85rem;
+    transition: 0.3s;
+    border: none;
+  }
+
+
+
+  .mensagem {
+    display: none;
+    background: rgba(255, 255, 255, 0.15);
+    margin-top: 12px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+  }
+
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  input[type="checkbox"]:checked + .mensagem {
+    display: block;
+  }
+</style>
+</head>
+<body>
+
+  <header>
+
+    <div class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <h1>KAIMA</h1>
+  </header>
+
+  <div class="container">
+
+    <section>
+      <h2>APRENDER</h2>
+
+      <div class="atividade">
+        <h3>Completar Frase</h3>
+        <p><strong>Desempenho:</strong> 85%</p>
+        <label class="ver-kaima" for="frase">Ver mensagem do KAIMA</label>
+        <input type="checkbox" id="frase">
+        <div class="mensagem">
+          “Muito bem! Você completou a frase corretamente!”
+        </div>
+      </div>
+
+      <div class="atividade">
+        <h3>Completar a Cor</h3>
+        <p><strong>Desempenho:</strong> 90%</p>
+        <label class="ver-kaima" for="cores">Ver mensagem do KAIMA</label>
+        <input type="checkbox" id="cores">
+        <div class="mensagem">
+          “Ótimo! Você identificou as cores corretamente!”
+        </div>
+      </div>
+
+    </section>
+
+
+    <section>
+      <h2>JOGO</h2>
+
+      <div class="atividade">
+        <h3>Reflexo</h3>
+        <p><strong>Desempenho:</strong> 70%</p>
+        <label class="ver-kaima" for="reflexo">Ver mensagem do KAIMA</label>
+        <input type="checkbox" id="reflexo">
+        <div class="mensagem">
+          “Você foi muito rápido! Continue praticando e vai ficar ainda melhor!”
+        </div>
+      </div>
+
+      <div class="atividade">
+        <h3>Ordem Numérica</h3>
+        <p><strong>Desempenho:</strong> 80%</p>
+        <label class="ver-kaima" for="ordem">Ver mensagem do KAIMA</label>
+        <input type="checkbox" id="ordem">
+        <div class="mensagem">
+          “Parabéns! Você colocou os números na ordem certinha! Continue assim!”
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+</body>
+</html>
